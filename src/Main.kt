@@ -11,4 +11,17 @@ fun main() {
         // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
         println("i = $i")
     }
+
+    val texto: String? = "  kotlin  "
+    val resultado = texto?.trim()?.uppercase() ?: "VACÍO"
+
+    val numero: String? = null
+    val longitud = numero?.length ?: 0
+
+    fun main() {
+        println(resultado)  // KOTLIN
+        println(longitud)   // 0
+    }
 }
+
+// Lee los archivos en apuntes/_prompts/ antes de empezar
