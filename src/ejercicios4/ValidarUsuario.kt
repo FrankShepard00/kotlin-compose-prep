@@ -37,5 +37,7 @@ fun main() {
     println(numeros)
     println(numeros::class.simpleName)
 
+    println("---")
+
 
 }
