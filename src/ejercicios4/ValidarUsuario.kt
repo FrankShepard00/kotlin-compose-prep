@@ -39,5 +39,9 @@ fun main() {
 
     println("---")
 
+    val texto = "Hola Mundo"
+    println(texto.substring(32))
+    println(texto.take(0))
+
 
 }
