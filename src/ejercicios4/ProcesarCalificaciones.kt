@@ -24,4 +24,9 @@ fun main() {
     val datos = listOf("8.5", "abc", "4.0", "9.0", "xyz", "6.5", "3.0")
     println(procesarCalificaciones(datos))
     // [Aprobado: 8.5, Aprobado: 9.0, Aprobado: 6.5]
+
+    val vacia = emptyList<Int>()
+    val resultado = vacia.all { it > 100 }
+    println(resultado)
+
 }

@@ -18,7 +18,7 @@ En main, debes:
 
 val numeros6 = (1..10).toList()
 
-fun ejecutarSiCumple(valor: Int, condicion: (Int) -> Boolean, accion: (Int) -> Unit): Unit {
+fun ejecutarSiCumple(valor: Int, condicion: (Int) -> Boolean, accion: (Int) -> Unit) {
     if (condicion(valor)) {
         accion(valor)
     }
