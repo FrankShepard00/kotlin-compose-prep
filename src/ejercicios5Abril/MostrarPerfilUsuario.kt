@@ -11,7 +11,7 @@ pero el teléfono es opcional.
 Recibe: usuario: Usuario
 Retorna: Unit
 */
-
+    
 data class Usuario(val nombre: String, val telefono: String?)
 
 fun mostrarPerfil(usuario: Usuario) {
