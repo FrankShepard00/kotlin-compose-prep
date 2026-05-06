@@ -36,19 +36,22 @@ fun main() {
                 numeros5,
                 filtro = { it > 5 },
                 transformacion = { numero -> numero * 3 })
-        } ")
+        } "
+    )
     println(
         "La suma de los números pares y elevados al cuadrado: ${
             procesarNumeros(
                 numeros5,
                 filtro = { it % 2 == 0 },
                 transformacion = { numero -> numero * numero })
-        } ")
+        } "
+    )
     println(
         "La suma de los números negativos y convertidos a positivos: ${
             procesarNumeros(
                 numeros5,
                 filtro = { it < 0 },
                 transformacion = { numero -> numero.absoluteValue })
-        } ")
+        } "
+    )
 }

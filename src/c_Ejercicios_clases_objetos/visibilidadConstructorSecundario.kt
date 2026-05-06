@@ -19,8 +19,8 @@ private class Producto(val nombre: String, val precio: Double) {
 }
 
 fun main() {
-    val p1 = Producto("Laptop", 15000.0)  // ✅ Constructor primario público
-    val p2 = Producto("Mouse")             // ✅ Constructor secundario público
+    Producto("Laptop", 15000.0)  // ✅ Constructor primario público
+    Producto("Mouse")             // ✅ Constructor secundario público
     // val p3 = Producto()                 // ❌ Constructor privado
 }
 

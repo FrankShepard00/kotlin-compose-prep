@@ -21,13 +21,13 @@ val numero2 = 15
 val numero3 = 20
 
 
-fun aplicarOperacion(numero: Int, operacion:(Int) -> Int): Int{
+fun aplicarOperacion(numero: Int, operacion: (Int) -> Int): Int {
     return operacion(numero)
 }
 
-fun main(){
-    println(aplicarOperacion(numero1){ it * 2})
-    println(aplicarOperacion(numero2){ it + 5})
-    println(aplicarOperacion(numero3){ it / 4})
+fun main() {
+    println(aplicarOperacion(numero1) { it * 2 })
+    println(aplicarOperacion(numero2) { it + 5 })
+    println(aplicarOperacion(numero3) { it / 4 })
 
 }

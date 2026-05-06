@@ -17,9 +17,7 @@ Después, en la función main:
 
 // Datos para usar:
 
-private data class Producto(val nombre: String, val precio: Double, val enStock: Boolean) {
-
-}
+private data class Producto(val nombre: String, val precio: Double, val enStock: Boolean)
 
 fun main() {
 
@@ -34,7 +32,7 @@ fun main() {
     val listaNombresProductos = listaProductos.filter { it.enStock }.map { it.nombre }
     println("Lista de nombres: $listaNombresProductos")
 
-    val precioProductosStock = listaProductos.filter { it.enStock }. map { it.precio }.sum()
+    val precioProductosStock = listaProductos.filter { it.enStock }.map { it.precio }.sum()
     println("Total precio productos en stock: $precioProductosStock")
 
 }

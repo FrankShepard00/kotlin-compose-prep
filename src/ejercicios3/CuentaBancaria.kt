@@ -12,10 +12,11 @@ data class CuentaBancaria(
     val titular: String, // Solo lectura (referencia no camiba)
     var saldo: Double // Puede reasignarse (mutable)
 ) {
-    val transacciones = mutableListOf<String>() // Referencia no cambia (solo lectura), pero contenido si puede (mutable).
+    val transacciones =
+        mutableListOf<String>() // Referencia no cambia (solo lectura), pero contenido si puede (mutable).
 }
 
-fun main(){
+fun main() {
     val cuenta = CuentaBancaria("Frank", 100000000.0)
     //cuenta.titular = "Otra persona" // Solo lectura (no se puede reasignar)
     println(cuenta.titular)

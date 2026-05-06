@@ -27,9 +27,9 @@ fun procesarLista(numeros: List<Int>, condicion: (Int) -> Boolean): List<Int> {
 }
 
 fun main() {
-    val nuevaListaImprimir = procesarLista(numeros) {it > 5}
-    val nuevaListaImprimir2 = procesarLista(numeros) {it % 2 == 0}
-    val nuevaListaImprimir3 = procesarLista(numeros) {it <= 10 }
+    val nuevaListaImprimir = procesarLista(numeros) { it > 5 }
+    val nuevaListaImprimir2 = procesarLista(numeros) { it % 2 == 0 }
+    val nuevaListaImprimir3 = procesarLista(numeros) { it <= 10 }
 
 
     println(nuevaListaImprimir)
